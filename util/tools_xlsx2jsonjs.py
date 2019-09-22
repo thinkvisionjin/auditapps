@@ -93,15 +93,25 @@ class Tools:
                 "zoom":10,
                 "line":"ture"
             }
-            slide["text"] = {
-                "headline":row_data["标题"]+":"+row_data["姓名"],
-                "text": "<span class='vco-note'>"+row_data["评价"]+"</span>"
-            }
             slide["media"] = {
-                "url":"img/"+row_data["姓名"]+".png",
-                "credit": "人民日报",
-                "caption": row_data["荣誉"]
+                "url": "img/" + row_data["图片"],
             }
+            if row_data["姓名"] == "封面" :
+                slide["text"] = {
+                    "headline": row_data["标题"],
+                    "text": ""
+                }
+            elif  row_data["姓名"] == "结尾":
+                slide["text"] = {
+                    "headline": row_data["标题"],
+                    "text": "<span class='vco-note'>" + row_data["评价"] + "</span>"
+                }
+            else:
+                slide["text"] = {
+                    "headline":row_data["标题"]+":"+row_data["姓名"],
+                    "text": "<span class='vco-note'>"+row_data["评价"]+"</span>"
+                }
+                slide["media"]["caption"]=row_data["荣誉"]
             slides.append(slide)
             index += 1
 
@@ -116,6 +126,6 @@ class Tools:
             
 if __name__ == '__main__':
     # 从excel生成storymapjson
-    Tools.excel2StoryMapJson("data/优秀共产党员.xlsx","Sheet1","data/优秀共产党员2.json",True,"工作地")
+    Tools.excel2StoryMapJson("data/优秀共产党员.xlsx","Sheet1","data/优秀共产党员.json",True,"工作地")
     # 从excel生成百度撒点用js 
-    Tools.excel2js("data/优秀共产党员.xlsx","Sheet2","data/优秀共产党员.js",True,"工作地")
+    # Tools.excel2js("data/优秀共产党员.xlsx","Sheet2","data/优秀共产党员.js",True,"工作地")
