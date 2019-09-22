@@ -1,0 +1,61 @@
+{
+    "storymap": {
+        "slides": [{
+            "type": "overview",
+            "date": "1919-2019",
+            "text": {
+                "headline": "不忘初心、牢记使命 <small>优秀共产党员先进事迹选编</small>",
+                "text": "<p></span>"
+            
+            },
+            "media": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/US_Mean_Center_of_Population_1790-2010.PNG/800px-US_Mean_Center_of_Population_1790-2010.PNG",
+                "credit": "wikipedia",
+                "caption": "在中国共产党"
+            },
+            "location": {
+                "name": "兰考, 河南",
+                "lat": 34.8179060,
+                "lon": 114.8131028,
+                "zoom": 10,
+                "line": true
+            },
+        }, {
+            "date": "1964",
+            "text": {
+                "headline": "县委书记的榜样-焦裕禄",
+                "text": "<span class='vco-note'>学习焦裕禄同志同志“心中装着全体人民、唯独没有自己”的公仆情怀，凡是探求就里、“吃别人嚼过的馍没味道”的求实作风，敢叫偷天换新天、革命者要在苦难困难面前逞英雄的奋斗精神、艰苦朴素、廉洁奉公、“任何时候都不搞特殊化的道德情操”</span>"
+            },
+            "location": {
+                "name": "兰考, 河南",
+                "lat": 34.8179060,
+                "lon": 114.8131028,
+                "zoom": 10,
+                "line": true
+            },
+            "media": {
+                "url": "img/焦裕禄.jpg",
+                "credit": "人民日报",
+                "caption": "兰考县县委书记"
+            }
+        }, {
+            "date": "1800",
+            "text": {
+                "headline": "1800: Thomas Jefferson",
+                "text": "<p>In 1800, Thomas Jefferson was elected as the President of the United States, not too far from Howard County Maryland the new center of US population. He of course did not have a Twitter account, but this is fun.</p> <span class='vco-note'>You can embed a tweet into your StoryMapJS using the URL to the tweet.</span>"
+            },
+            "location": {
+                "name": "Howard County, Maryland",
+                "lat": 39.26833,
+                "lon": -76.94167,
+                "zoom": 10,
+                "line": true
+            },
+            "media": {
+                "url": "https://twitter.com/ThomasJefferson/status/265523460720168960",
+                "credit": "Twitter",
+                "caption": "Thomas Jefferson Twitter account"
+            }
+        }]
+    }
+}
